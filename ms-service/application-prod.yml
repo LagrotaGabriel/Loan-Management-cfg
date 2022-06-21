@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: estudo-ms-1
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+          - "*"
+estudo-ms-1:
+  mensagem: "Cia"
+  default-value: "Mondo"
