@@ -1,12 +1,6 @@
 spring:
   application:
-    name: estudo-ms-1
-management:
-  endpoints:
-    web:
-      exposure:
-        include:
-          - "*"
-estudo-ms-1:
+    name: ms-config-server
+estudo-ms:
   mensagem: "Hola"
   default-value: "Mundo"
