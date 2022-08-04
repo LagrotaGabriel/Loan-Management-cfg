@@ -1,6 +1,3 @@
 spring:
   application:
     name: ms-config-server
-estudo-ms:
-  mensagem: "Hello"
-  default-value: "World"

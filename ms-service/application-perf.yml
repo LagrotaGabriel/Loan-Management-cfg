@@ -1,6 +1,0 @@
-spring:
-  application:
-    name: ms-config-server
-estudo-ms:
-  mensagem: "Hola"
-  default-value: "Mundo"
