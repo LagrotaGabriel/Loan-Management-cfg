@@ -2,7 +2,7 @@ server:
   port: 8090
 spring:
   application:
-    name: config-server
+    name: Loan-API
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/loan_api?useTimezone=true&serverTimezone=UTC
