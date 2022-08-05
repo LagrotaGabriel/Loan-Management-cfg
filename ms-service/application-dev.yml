@@ -4,17 +4,22 @@ spring:
   application:
     name: Loan-API
   datasource:
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/loan_api?useTimezone=true&serverTimezone=UTC
-    username: root
-    password: 123456
+    url: jdbc:db2://localhost:50000/loan_api?useTimezone=true&serverTimezone=UTC
+    username: sa
+    password: 123
+    driver-class-name: com.ibm.db2.jcc.DB2Driver
+    testWhileIdle: true
+    validationQuery: SELECT 1
   jpa:
+    show-sql: true
     hibernate:
-      ddl-auto: create
-    show-sql: false
+      ddl-auto: create-drop
+      naming:
+        implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyHbmImpl
+        physical-strategy: org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy
     properties:
       hibernate:
-        dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+        dialect: org.hibernate.dialect.DB2Dialect
 feign:
   client:
     config:
